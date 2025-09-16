@@ -6,25 +6,25 @@ BrazoRobotico::BrazoRobotico(){
 	y = 0.0;
 	z = 0.0;
 	Sujeto = false;
-double getx(){
+double BrazoRobotico::getx(){
 	return x;
 }
-double gety(){
+double BrazoRobotico::gety(){
 	return y;
 }
-double getz(){
+double BrazoRobotico::getz(){
 	return  z;
 }
-bool getSujeto(){
+bool BrazoRobotico::getSujeto(){
 	return Sujeto;
 }
-void coger(){
+void BrazoRobotico::coger(){
 	Sujeto=true;
 }
-void dejar(){
+void BrazoRobotico::dejar(){
 	Sujeto=false;
 }
-void::BrazoRobotico(double x,double y,double z){
+void BrazoRobotico::mover(double x,double y,double z){
 	this -> x = x;
 	this -> y = y;
 	this -> z = z;
